@@ -1,0 +1,80 @@
+.home-container img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-right: 40px;
+}
+
+/* 左上样式 */
+.user-info {
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+.name {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.login-info p {
+  line-height: 28px;
+  font-size: 14px;
+  color: #999999;
+}
+
+.login-info p span {
+  color: #666666;
+  margin-left: 60px;
+}
+
+/* 右上样式 */
+.order {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.order .ant-card {
+  width: 33%;
+}
+
+.order .ant-card-body {
+  display: flex;
+  padding: 10px 25px;
+}
+
+.icon-box {
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  line-height: 85px;
+  color: #fff;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.icon-box .anticon {
+  font-size: 30px;
+}
+
+.detail {
+  margin-left: 15px;
+}
+
+.detail .num {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.detail .text {
+  font-size: 14px;
+  text-align: center;
+  color: #999999;
+}
+
+/* 右下样式 */
+.graph {
+  display: flex;
+}
