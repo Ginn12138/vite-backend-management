@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function Mall() {
-  return <div>mall</div>;
+  return <div>商品管理</div>;
 }

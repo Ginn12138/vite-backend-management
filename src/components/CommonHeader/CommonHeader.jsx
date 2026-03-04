@@ -1,11 +1,12 @@
-import "./index.css";
+import { useDispatch, useSelector } from "react-redux";
+import { useNavigate } from "react-router";
+import styles from "./CommonHeader.module.css";
 import { Button, Layout, Avatar, Dropdown } from "antd";
 import { MenuFoldOutlined, MenuUnfoldOutlined } from "@ant-design/icons";
-import { useDispatch, useSelector } from "react-redux";
-import { collapseMenu } from "../../store/reducers/tab";
-import { useNavigate } from "react-router";
 const { Header } = Layout;
+
 import defaultAvatar from "../../assets/images/user-default.png";
+import { collapseMenu } from "../../store/reducers/tabSlice";
 
 export default function CommonHeader() {
   const collapsed = useSelector((state) => state.tab.isCollapse);
@@ -37,7 +38,7 @@ export default function CommonHeader() {
   ];
 
   return (
-    <Header className="header-container">
+    <Header className={styles.container}>
       <Button
         onClick={() => {
           dispatch(collapseMenu());

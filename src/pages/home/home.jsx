@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import { Col, Row, Card, Table } from "antd";
 import * as Icon from "@ant-design/icons";
 import { getData } from "../../api";
-import MyEcharts from "../../components/echarts";
+import MyEcharts from "../../components/MyEcharts/MyEcharts";
 import defaultAvatar from "../../assets/images/user-default.png";
 // 表格第一行数据，固定数据
 const columns = [
@@ -115,11 +115,10 @@ export default function Home() {
   }, []);
 
   return (
-    <Row className="home-container">
+    <Row className="container">
       <Col span={8}>
         <Card hoverable>
           <div className="user-info">
-            {/* <img src={require("../../assets/images/user-default.png")} /> */}
             <img src={defaultAvatar} />
             <div>
               <p className="name">Admin</p>

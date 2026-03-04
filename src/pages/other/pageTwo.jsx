@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function PageTwo() {
-  return <div>pageTwo</div>;
+  return <div>页面二</div>;
 }

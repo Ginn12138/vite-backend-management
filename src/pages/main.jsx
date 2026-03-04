@@ -1,10 +1,11 @@
 import { Outlet } from "react-router";
 import { Layout, theme } from "antd";
-import CommonAside from "../components/commonAside";
-import CommonHeader from "../components/commonHeader";
-import CommonTag from "../components/commonTag";
-import RouterAuth from "../router/routerAuth";
 const { Content } = Layout;
+
+import CommonAside from "../components/CommonAside/CommonAside";
+import CommonHeader from "../components/CommonHeader/CommonHeader";
+import CommonTag from "../components/CommonTag/CommonTag";
+import RouterAuth from "../router/RouterAuth";
 
 export default function Main() {
   const {

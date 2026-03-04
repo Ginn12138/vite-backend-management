@@ -1,11 +1,12 @@
 import React from "react";
-import { Layout, Menu } from "antd";
-import MenuConfig from "../../config";
-import * as Icon from "@ant-design/icons";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router";
-import { setTab } from "../../store/reducers/tab";
+import * as Icon from "@ant-design/icons";
+import { Layout, Menu } from "antd";
 const { Sider } = Layout;
+
+import MenuConfig from "../../config/MenuConfig";
+import { setTab } from "../../store/reducers/tabSlice";
 
 //  根据名字获取icon图标
 const iconToElement = (name) => React.createElement(Icon[name]);
@@ -37,9 +38,7 @@ export default function CommonAside() {
     dispatch(setTab(val));
   };
   const jumpMenu = (e) => {
-    console.log(e);
     navigate(e.key);
-
     let data;
     MenuConfig.forEach((item) => {
       // 用e.keyPath来匹配数据，是为了处理一级菜单和二级菜单的通用情况
